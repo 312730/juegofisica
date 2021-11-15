@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/triangleone.png" type="Texture" id=1]
+
+[node name="tringleobstacle" type="Area2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 0.475067
+margin_top = 0.47731
+margin_right = 80.4751
+margin_bottom = 80.4773
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 0.343796, 78.4127 )
+
+[node name="Node2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( -4.5359, 6.99081 )
+scale = Vector2( 1.10874, 1.12937 )
+polygon = PoolVector2Array( 0.406204, 2.83734, 79.6562, -77.9127, -0.0937958, -78.4127 )

@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/triangleone.png" type="Texture" id=1]
+
+[node name="flippedtriangle" type="Area2D"]
+rotation = 1.5708
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 1.14545, -0.709606 )
+scale = Vector2( 1.04276, 1.06489 )
+polygon = PoolVector2Array( -0.734077, 2.09132, 79.1511, 0.409527, 72.4239, 5.03447, 1.78862, 76.0902, -0.313626, 77.3516 )
